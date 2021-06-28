@@ -6,10 +6,8 @@ words = []
 
 for line in sys.stdin:
 	words += line.split()
-	print(words)
 	
 for word in words:
-		print(word, end =" > ")
 		for letter in word:
 			if 91 > ord(letter.upper()) > 64:
 				letter_counter[ord(letter.upper()) - ord('A')] += 1
@@ -21,7 +19,6 @@ for word in words:
 		for element in letter_counter:
 			if element > temp:
 				temp = element
-		print("scored: ", temp)
 		total_score += temp
 		letter_counter = [0]*26
 		
