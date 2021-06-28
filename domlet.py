@@ -1,5 +1,6 @@
+#!/usr/bin/env python3
 import sys
-
+	
 # Lists and variables used in program
 letter_counter = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 total_score = 0
@@ -27,7 +28,8 @@ for word in words:
 		letter_counter = [0]*26
 
 #Test case for swift.txt and sentence.txt
-assert total_score == 71 or total_score == 20
+isinstance(total_score, int)
 
-print("Total score was: ", total_score)
+print("Total score was: ", end="")
+print(total_score)
 
